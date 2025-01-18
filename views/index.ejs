@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+
+<main>
+  <h1><%= message %></h1>
+  <ul>
+    <% blogs.forEach(function(blog){ %>
+     <li><%= blog.title %></li>
+    <% }); %>
+  </ul>
+</main>
+
+
+<%- include('partials/footer') %>
